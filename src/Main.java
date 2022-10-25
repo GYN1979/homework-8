@@ -16,7 +16,6 @@ public class Main {
         while (b <= 10) {
             if (b == 10) {
                 System.out.println(b);
-                break;
             }
             System.out.print(b);
             b++;
@@ -31,11 +30,10 @@ public class Main {
         int population = 12_000_000;
         int birthYear = population / 1000 * 17;
         int mortalityYear = population / 1000 * 8;
-        int year = 0;
-        while (year < 10) {
-            year++;
-            population = population + birthYear - mortalityYear;
-            System.out.println(" Год " + year + ", численность населения составляет " + population + " человек");
+        for (int i8 = 1; i8<= 10; i8++){
+            population += birthYear;
+            population -= mortalityYear;
+            System.out.printf (" Год %d , численность %d  \n" , i8, population);
         }
         // Task 2.1.
         System.out.println("Task 2.1.");
@@ -71,9 +69,8 @@ public class Main {
         // Task 2.4.
         System.out.println("Task 2.4.");
         int firstFriday = 5;
-        int nextFriday = 0;
-        for (nextFriday = firstFriday; nextFriday < 31; nextFriday += 7) {
-            System.out.println(" Сегодня пятница, " + nextFriday + " -ое число. Необходимо подготовить отчет ");
+        for (int currentFriday = firstFriday; currentFriday <= 31; currentFriday += 7) {
+            System.out.println(" Сегодня пятница, " + currentFriday + " -ое число. Необходимо подготовить отчет ");
         }
         // Task 3.1.
         System.out.println("Task 3.1");
