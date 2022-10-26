@@ -14,12 +14,11 @@ public class Main {
         System.out.println("Task 1.2.");
         int b = 1;
         while (b <= 10) {
-            if (b == 10) {
-                System.out.println(b);
-            }
             System.out.print(b);
             b++;
         }
+        System.out.println();
+
         for (int h = 10; h > 0; h--) {
             System.out.print(h);
         }
@@ -30,10 +29,10 @@ public class Main {
         int population = 12_000_000;
         int birthYear = population / 1000 * 17;
         int mortalityYear = population / 1000 * 8;
-        for (int i8 = 1; i8<= 10; i8++){
+        for (int i8 = 1; i8 <= 10; i8++) {
             population += birthYear;
             population -= mortalityYear;
-            System.out.printf (" Год %d , численность %d  \n" , i8, population);
+            System.out.printf(" Год %d , численность %d  \n", i8, population);
         }
         // Task 2.1.
         System.out.println("Task 2.1.");
@@ -68,29 +67,33 @@ public class Main {
         }
         // Task 2.4.
         System.out.println("Task 2.4.");
-        int firstFriday = 5;
-        for (int currentFriday = firstFriday; currentFriday <= 31; currentFriday += 7) {
-            System.out.println(" Сегодня пятница, " + currentFriday + " -ое число. Необходимо подготовить отчет ");
+        for ( int reportingFriday = 5; reportingFriday <=31; reportingFriday += 7){
+            System.out.println (" Сегодня пятница, " + reportingFriday + " -ое число. Необходимо подготовить отчет ");
         }
         // Task 3.1.
         System.out.println("Task 3.1");
         int currenYear = 2022;
         int previousYear = currenYear - 200;
         int nextYear = currenYear + 100;
-        for (int c = previousYear; c < nextYear; c++) {
+        for (int c = previousYear; c <= nextYear; c++) {
             if (c % 79 == 0) {
-            System.out.println(c);
+                System.out.println(c);
             }
         }
         // Task3.2.
         System.out.println("Task 3.2");
         int a = 2;
-        for (b = 1; b <=10; b++){
-        int k = a * b;
-        System.out.println(a + " * " + b + " = " + k);
+        for (b = 1; b <= 10; b++) {
+            int k = a * b;
+            System.out.println(a + " * " + b + " = " + k);
         }
-        }
+
+    }
 }
+
+
+
+
 
 
 
